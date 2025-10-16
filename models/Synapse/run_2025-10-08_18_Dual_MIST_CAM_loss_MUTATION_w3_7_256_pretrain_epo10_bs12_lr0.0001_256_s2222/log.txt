@@ -1,0 +1,20 @@
+[15:47:52.851] Namespace(strings=[], root_path='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset/classification_data/train_npz_new', volume_path='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset/classification_data/train_npz_new', list_dir='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset/classification_data/lists_Synapse', dataset='Synapse', num_classes=3, max_iterations=30000, max_epochs=10, batch_size=12, n_gpu=1, deterministic=1, base_lr=0.0001, img_size=256, seed=2222, dual=True, z_spacing=1, is_pretrain=True, exp='run_2025-10-08_18_Dual_MIST_CAM_loss_MUTATION_w3_7_256')
+[15:47:52.851] ##########Disable test_save##########
+[15:47:52.856] ##########Using dual supervision##########
+[15:47:52.861] 59 iterations per epoch. 590 max iterations 
+[15:51:17.912] Namespace(strings=[], root_path='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset/classification_data/train_npz_new', volume_path='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset/classification_data/train_npz_new', list_dir='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset/classification_data/lists_Synapse', dataset='Synapse', num_classes=3, max_iterations=30000, max_epochs=10, batch_size=12, n_gpu=1, deterministic=1, base_lr=0.0001, img_size=256, seed=2222, dual=True, z_spacing=1, is_pretrain=True, exp='run_2025-10-08_18_Dual_MIST_CAM_loss_MUTATION_w3_7_256')
+[15:51:17.913] ##########Disable test_save##########
+[15:51:17.913] ##########Using dual supervision##########
+[15:51:17.919] 59 iterations per epoch. 590 max iterations 
+[15:51:56.225] iteration 2, epoch 0 : loss : 9.551803, lr: 0.000100
+[15:52:36.672] iteration 4, epoch 0 : loss : 6.386233, lr: 0.000100
+[15:53:22.233] iteration 6, epoch 0 : loss : 4.780273, lr: 0.000100
+[15:54:06.339] iteration 8, epoch 0 : loss : 4.583285, lr: 0.000100
+[15:54:49.734] iteration 10, epoch 0 : loss : 4.606223, lr: 0.000100
+[15:55:28.714] iteration 12, epoch 0 : loss : 4.387977, lr: 0.000100
+[15:56:15.632] iteration 14, epoch 0 : loss : 4.355427, lr: 0.000100
+[15:56:52.672] iteration 16, epoch 0 : loss : 4.446965, lr: 0.000100
+[15:57:31.413] iteration 18, epoch 0 : loss : 4.410906, lr: 0.000100
+[15:58:16.949] iteration 20, epoch 0 : loss : 4.260225, lr: 0.000100
+[15:58:56.998] iteration 22, epoch 0 : loss : 4.279554, lr: 0.000100
+[15:59:43.246] iteration 24, epoch 0 : loss : 4.028715, lr: 0.000100

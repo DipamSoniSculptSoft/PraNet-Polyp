@@ -1,0 +1,5 @@
+[16:31:02.533] Namespace(strings=[], root_path='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset\\classification_data_with_non_polp/classification_data/train_npz_new', volume_path='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset\\classification_data_with_non_polp/classification_data/train_npz_new', list_dir='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset\\classification_data_with_non_polp/classification_data/lists_Synapse', dataset='Synapse', num_classes=3, max_iterations=30000, max_epochs=50, batch_size=8, n_gpu=1, deterministic=1, base_lr=1e-05, img_size=256, seed=2222, dual=True, z_spacing=1, is_pretrain=True, exp='run_2025-10-13_19_Dual_MIST_CAM_loss_MUTATION_w3_7_256')
+[16:31:02.536] ##########Disable test_save##########
+[16:31:02.536] ##########Using dual supervision##########
+[16:31:02.543] 122 iterations per epoch. 6100 max iterations 
+[16:36:04.569] iteration 50, epoch 0 : loss : 0.524025, lr: 0.000010

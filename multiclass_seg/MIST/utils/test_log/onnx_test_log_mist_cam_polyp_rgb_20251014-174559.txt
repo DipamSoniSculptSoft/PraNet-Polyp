@@ -1,0 +1,3 @@
+[17:45:59.993] Namespace(volume_path='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset/Dataset_2000/train_npz_new', list_dir='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset/Dataset_2000/lists_Synapse', dataset='Synapse', num_classes=3, img_size=256, seed=2222, deterministic=1, is_savefig=True, test_save_dir='onnx_test_predictions')
+[17:45:59.994] Testing ONNX model: mist_cam_polyp_rgb
+[17:45:59.996] 214 test iterations per epoch

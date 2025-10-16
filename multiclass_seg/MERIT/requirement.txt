@@ -1,0 +1,15 @@
+torch
+torchvision
+numpy
+scipy
+tqdm
+medpy
+python-dotenv
+pytz
+SimpleITK
+pandas
+thop
+segmentation-mask-overlay
+matplotlib
+seaborn
+Pillow

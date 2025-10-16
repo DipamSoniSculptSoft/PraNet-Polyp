@@ -1,0 +1,368 @@
+[16:37:11.348] Namespace(strings=[], root_path='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset\\classification_data_with_non_polp/classification_data/train_npz_new', volume_path='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset\\classification_data_with_non_polp/classification_data/train_npz_new', list_dir='C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/Dataset\\classification_data_with_non_polp/classification_data/lists_Synapse', dataset='Synapse', num_classes=3, max_iterations=30000, max_epochs=50, batch_size=4, n_gpu=1, deterministic=1, base_lr=1e-05, img_size=256, seed=2222, dual=True, z_spacing=1, is_pretrain=True, exp='run_2025-10-13_19_Dual_MIST_CAM_loss_MUTATION_w3_7_256')
+[16:37:11.348] ##########Disable test_save##########
+[16:37:11.348] ##########Using dual supervision##########
+[16:37:11.354] 243 iterations per epoch. 12150 max iterations 
+[16:37:43.795] iteration 50, epoch 0 : loss : 0.627056, lr: 0.000010
+[16:38:07.158] iteration 100, epoch 0 : loss : 0.395650, lr: 0.000010
+[16:38:30.385] iteration 150, epoch 0 : loss : 0.328800, lr: 0.000010
+[16:38:53.916] iteration 200, epoch 0 : loss : 0.215395, lr: 0.000010
+[16:39:14.062] iteration 243, epoch 0 : loss : 0.275699, lr: 0.000010
+[16:39:17.361] iteration 250, epoch 1 : loss : 0.320156, lr: 0.000010
+[16:39:40.680] iteration 300, epoch 1 : loss : 0.355855, lr: 0.000010
+[16:40:03.961] iteration 350, epoch 1 : loss : 0.179006, lr: 0.000010
+[16:40:27.217] iteration 400, epoch 1 : loss : 0.368332, lr: 0.000010
+[16:40:50.515] iteration 450, epoch 1 : loss : 0.411017, lr: 0.000010
+[16:41:07.345] iteration 486, epoch 1 : loss : 0.379056, lr: 0.000010
+[16:41:14.031] iteration 500, epoch 2 : loss : 0.278264, lr: 0.000010
+[16:41:37.321] iteration 550, epoch 2 : loss : 0.257574, lr: 0.000010
+[16:42:00.628] iteration 600, epoch 2 : loss : 0.122813, lr: 0.000010
+[16:42:24.068] iteration 650, epoch 2 : loss : 0.119656, lr: 0.000010
+[16:42:47.379] iteration 700, epoch 2 : loss : 0.172480, lr: 0.000010
+[16:43:00.902] iteration 729, epoch 2 : loss : 0.068326, lr: 0.000010
+[16:43:10.672] iteration 750, epoch 3 : loss : 0.095239, lr: 0.000010
+[16:43:34.010] iteration 800, epoch 3 : loss : 0.546899, lr: 0.000010
+[16:43:57.347] iteration 850, epoch 3 : loss : 0.352679, lr: 0.000010
+[16:44:20.687] iteration 900, epoch 3 : loss : 0.117531, lr: 0.000010
+[16:44:44.016] iteration 950, epoch 3 : loss : 0.371111, lr: 0.000010
+[16:44:54.261] iteration 972, epoch 3 : loss : 0.190296, lr: 0.000010
+[16:45:07.390] iteration 1000, epoch 4 : loss : 0.298778, lr: 0.000010
+[16:45:30.803] iteration 1050, epoch 4 : loss : 0.237761, lr: 0.000010
+[16:45:54.230] iteration 1100, epoch 4 : loss : 0.298818, lr: 0.000010
+[16:46:17.587] iteration 1150, epoch 4 : loss : 0.322100, lr: 0.000010
+[16:46:40.982] iteration 1200, epoch 4 : loss : 0.308117, lr: 0.000010
+[16:46:48.018] iteration 1215, epoch 4 : loss : 0.055374, lr: 0.000010
+[16:47:04.428] iteration 1250, epoch 5 : loss : 0.130936, lr: 0.000010
+[16:47:27.909] iteration 1300, epoch 5 : loss : 0.274628, lr: 0.000010
+[16:47:51.505] iteration 1350, epoch 5 : loss : 0.070353, lr: 0.000010
+[16:48:14.956] iteration 1400, epoch 5 : loss : 0.267153, lr: 0.000010
+[16:48:38.473] iteration 1450, epoch 5 : loss : 0.073443, lr: 0.000010
+[16:48:42.279] iteration 1458, epoch 5 : loss : 0.154480, lr: 0.000010
+[16:49:02.001] iteration 1500, epoch 6 : loss : 0.065573, lr: 0.000010
+[16:49:25.421] iteration 1550, epoch 6 : loss : 0.273925, lr: 0.000010
+[16:49:48.889] iteration 1600, epoch 6 : loss : 0.064607, lr: 0.000010
+[16:50:12.284] iteration 1650, epoch 6 : loss : 0.322688, lr: 0.000010
+[16:50:35.804] iteration 1700, epoch 6 : loss : 0.136250, lr: 0.000010
+[16:50:36.293] iteration 1701, epoch 6 : loss : 0.287398, lr: 0.000010
+[16:50:59.297] iteration 1750, epoch 7 : loss : 0.281945, lr: 0.000010
+[16:51:22.876] iteration 1800, epoch 7 : loss : 0.263861, lr: 0.000010
+[16:51:46.307] iteration 1850, epoch 7 : loss : 0.096104, lr: 0.000010
+[16:52:09.874] iteration 1900, epoch 7 : loss : 0.111931, lr: 0.000010
+[16:52:30.546] iteration 1944, epoch 7 : loss : 0.095253, lr: 0.000010
+[16:52:33.428] iteration 1950, epoch 8 : loss : 0.081208, lr: 0.000010
+[16:52:56.940] iteration 2000, epoch 8 : loss : 0.298982, lr: 0.000010
+[16:53:20.678] iteration 2050, epoch 8 : loss : 0.148616, lr: 0.000010
+[16:53:44.294] iteration 2100, epoch 8 : loss : 0.054993, lr: 0.000010
+[16:54:07.900] iteration 2150, epoch 8 : loss : 0.154034, lr: 0.000010
+[16:54:25.393] iteration 2187, epoch 8 : loss : 0.069203, lr: 0.000010
+[16:54:31.532] iteration 2200, epoch 9 : loss : 0.082021, lr: 0.000010
+[16:54:55.336] iteration 2250, epoch 9 : loss : 0.063301, lr: 0.000010
+[16:55:19.045] iteration 2300, epoch 9 : loss : 0.079270, lr: 0.000010
+[16:55:42.791] iteration 2350, epoch 9 : loss : 0.074193, lr: 0.000010
+[16:56:06.460] iteration 2400, epoch 9 : loss : 0.288012, lr: 0.000010
+[16:56:20.760] iteration 2430, epoch 9 : loss : 0.129010, lr: 0.000010
+[16:56:30.406] iteration 2450, epoch 10 : loss : 0.071443, lr: 0.000010
+[16:56:54.079] iteration 2500, epoch 10 : loss : 0.041413, lr: 0.000010
+[16:57:17.767] iteration 2550, epoch 10 : loss : 0.275201, lr: 0.000010
+[16:57:41.502] iteration 2600, epoch 10 : loss : 0.039007, lr: 0.000010
+[16:58:05.260] iteration 2650, epoch 10 : loss : 0.268160, lr: 0.000010
+[16:58:16.108] iteration 2673, epoch 10 : loss : 0.051450, lr: 0.000010
+[16:58:28.977] iteration 2700, epoch 11 : loss : 0.274037, lr: 0.000010
+[16:58:52.809] iteration 2750, epoch 11 : loss : 0.177104, lr: 0.000010
+[16:59:16.590] iteration 2800, epoch 11 : loss : 0.257384, lr: 0.000010
+[16:59:40.244] iteration 2850, epoch 11 : loss : 0.051643, lr: 0.000010
+[17:00:04.287] iteration 2900, epoch 11 : loss : 0.039219, lr: 0.000010
+[17:00:11.874] iteration 2916, epoch 11 : loss : 0.036038, lr: 0.000010
+[17:00:28.001] iteration 2950, epoch 12 : loss : 0.045087, lr: 0.000010
+[17:00:51.860] iteration 3000, epoch 12 : loss : 0.053274, lr: 0.000010
+[17:01:15.694] iteration 3050, epoch 12 : loss : 0.118558, lr: 0.000010
+[17:01:39.593] iteration 3100, epoch 12 : loss : 0.041187, lr: 0.000010
+[17:02:03.402] iteration 3150, epoch 12 : loss : 0.028228, lr: 0.000010
+[17:02:07.711] iteration 3159, epoch 12 : loss : 0.153224, lr: 0.000010
+[17:02:27.346] iteration 3200, epoch 13 : loss : 0.157794, lr: 0.000010
+[17:02:52.371] iteration 3250, epoch 13 : loss : 0.165749, lr: 0.000010
+[17:03:16.700] iteration 3300, epoch 13 : loss : 0.059879, lr: 0.000010
+[17:03:41.842] iteration 3350, epoch 13 : loss : 0.259849, lr: 0.000010
+[17:04:06.710] iteration 3400, epoch 13 : loss : 0.268784, lr: 0.000010
+[17:04:07.732] iteration 3402, epoch 13 : loss : 0.066672, lr: 0.000010
+[17:04:31.500] iteration 3450, epoch 14 : loss : 0.040489, lr: 0.000010
+[17:04:55.641] iteration 3500, epoch 14 : loss : 0.043406, lr: 0.000010
+[17:05:19.735] iteration 3550, epoch 14 : loss : 0.223907, lr: 0.000010
+[17:05:44.056] iteration 3600, epoch 14 : loss : 0.249973, lr: 0.000010
+[17:06:06.004] iteration 3645, epoch 14 : loss : 0.030904, lr: 0.000010
+[17:06:08.462] iteration 3650, epoch 15 : loss : 0.273822, lr: 0.000010
+[17:06:32.795] iteration 3700, epoch 15 : loss : 0.044866, lr: 0.000010
+[17:06:57.068] iteration 3750, epoch 15 : loss : 0.033883, lr: 0.000010
+[17:07:21.319] iteration 3800, epoch 15 : loss : 0.034226, lr: 0.000010
+[17:07:45.768] iteration 3850, epoch 15 : loss : 0.081756, lr: 0.000010
+[17:08:04.413] iteration 3888, epoch 15 : loss : 0.256280, lr: 0.000010
+[17:08:04.461] 278 test iterations per epoch
+[17:08:39.113] Testing performance in val model: mean_dice : 0.413300, best_dice : 0.800000
+[17:08:44.793] iteration 3900, epoch 16 : loss : 0.068036, lr: 0.000010
+[17:09:09.218] iteration 3950, epoch 16 : loss : 0.047450, lr: 0.000010
+[17:09:33.433] iteration 4000, epoch 16 : loss : 0.043850, lr: 0.000010
+[17:09:57.520] iteration 4050, epoch 16 : loss : 0.265367, lr: 0.000010
+[17:10:21.530] iteration 4100, epoch 16 : loss : 0.260005, lr: 0.000010
+[17:10:36.433] iteration 4131, epoch 16 : loss : 0.076436, lr: 0.000010
+[17:10:36.433] 278 test iterations per epoch
+[17:11:05.646] Testing performance in val model: mean_dice : 0.407606, best_dice : 0.800000
+[17:11:14.665] iteration 4150, epoch 17 : loss : 0.198036, lr: 0.000010
+[17:11:38.712] iteration 4200, epoch 17 : loss : 0.250479, lr: 0.000010
+[17:12:02.967] iteration 4250, epoch 17 : loss : 0.248679, lr: 0.000010
+[17:12:27.233] iteration 4300, epoch 17 : loss : 0.053456, lr: 0.000010
+[17:12:51.608] iteration 4350, epoch 17 : loss : 0.198221, lr: 0.000010
+[17:13:03.204] iteration 4374, epoch 17 : loss : 0.059478, lr: 0.000010
+[17:13:03.204] 278 test iterations per epoch
+[17:13:33.423] Testing performance in val model: mean_dice : 0.413114, best_dice : 0.800000
+[17:13:52.151] iteration 4400, epoch 18 : loss : 0.042667, lr: 0.000010
+[17:14:26.780] iteration 4450, epoch 18 : loss : 0.029243, lr: 0.000010
+[17:15:01.540] iteration 4500, epoch 18 : loss : 0.056851, lr: 0.000010
+[17:15:35.049] iteration 4550, epoch 18 : loss : 0.023990, lr: 0.000010
+[17:16:08.109] iteration 4600, epoch 18 : loss : 0.061834, lr: 0.000010
+[17:16:19.308] iteration 4617, epoch 18 : loss : 0.200395, lr: 0.000010
+[17:16:19.308] 278 test iterations per epoch
+[17:16:50.915] Testing performance in val model: mean_dice : 0.404915, best_dice : 0.800000
+[17:17:13.698] iteration 4650, epoch 19 : loss : 0.193174, lr: 0.000010
+[17:17:50.586] iteration 4700, epoch 19 : loss : 0.041898, lr: 0.000010
+[17:18:24.619] iteration 4750, epoch 19 : loss : 0.052908, lr: 0.000010
+[17:18:58.559] iteration 4800, epoch 19 : loss : 0.030770, lr: 0.000010
+[17:19:32.438] iteration 4850, epoch 19 : loss : 0.061523, lr: 0.000010
+[17:19:39.401] iteration 4860, epoch 19 : loss : 0.026744, lr: 0.000010
+[17:19:39.403] 278 test iterations per epoch
+[17:20:10.379] Testing performance in val model: mean_dice : 0.416751, best_dice : 0.800000
+[17:20:38.595] iteration 4900, epoch 20 : loss : 0.032495, lr: 0.000010
+[17:21:14.500] iteration 4950, epoch 20 : loss : 0.048921, lr: 0.000010
+[17:21:49.687] iteration 5000, epoch 20 : loss : 0.032249, lr: 0.000010
+[17:22:23.879] iteration 5050, epoch 20 : loss : 0.063619, lr: 0.000010
+[17:22:58.654] iteration 5100, epoch 20 : loss : 0.053926, lr: 0.000010
+[17:23:00.922] iteration 5103, epoch 20 : loss : 0.034627, lr: 0.000010
+[17:23:00.922] 278 test iterations per epoch
+[17:23:31.241] Testing performance in val model: mean_dice : 0.405250, best_dice : 0.800000
+[17:24:03.335] iteration 5150, epoch 21 : loss : 0.293321, lr: 0.000010
+[17:24:37.182] iteration 5200, epoch 21 : loss : 0.085065, lr: 0.000010
+[17:25:09.106] iteration 5250, epoch 21 : loss : 0.037109, lr: 0.000010
+[17:25:41.569] iteration 5300, epoch 21 : loss : 0.058890, lr: 0.000010
+[17:26:10.672] iteration 5346, epoch 21 : loss : 0.195043, lr: 0.000010
+[17:26:10.672] 278 test iterations per epoch
+[17:26:42.964] Testing performance in val model: mean_dice : 0.408062, best_dice : 0.800000
+[17:26:45.285] iteration 5350, epoch 22 : loss : 0.041888, lr: 0.000010
+[17:27:17.565] iteration 5400, epoch 22 : loss : 0.054095, lr: 0.000010
+[17:27:44.178] iteration 5450, epoch 22 : loss : 0.029092, lr: 0.000010
+[17:28:02.182] iteration 5500, epoch 22 : loss : 0.066267, lr: 0.000010
+[17:28:20.283] iteration 5550, epoch 22 : loss : 0.022811, lr: 0.000010
+[17:28:34.310] iteration 5589, epoch 22 : loss : 0.030924, lr: 0.000010
+[17:28:34.310] 278 test iterations per epoch
+[17:28:54.754] Testing performance in val model: mean_dice : 0.402105, best_dice : 0.800000
+[17:28:58.725] iteration 5600, epoch 23 : loss : 0.057776, lr: 0.000010
+[17:29:16.780] iteration 5650, epoch 23 : loss : 0.038444, lr: 0.000010
+[17:29:34.750] iteration 5700, epoch 23 : loss : 0.185980, lr: 0.000010
+[17:29:52.774] iteration 5750, epoch 23 : loss : 0.038948, lr: 0.000010
+[17:30:10.843] iteration 5800, epoch 23 : loss : 0.036359, lr: 0.000010
+[17:30:22.371] iteration 5832, epoch 23 : loss : 0.043803, lr: 0.000010
+[17:30:22.371] 278 test iterations per epoch
+[17:30:42.748] Testing performance in val model: mean_dice : 0.408925, best_dice : 0.800000
+[17:30:49.235] iteration 5850, epoch 24 : loss : 0.061747, lr: 0.000010
+[17:31:07.259] iteration 5900, epoch 24 : loss : 0.060693, lr: 0.000010
+[17:31:25.228] iteration 5950, epoch 24 : loss : 0.100088, lr: 0.000010
+[17:31:43.355] iteration 6000, epoch 24 : loss : 0.190424, lr: 0.000010
+[17:32:01.362] iteration 6050, epoch 24 : loss : 0.037420, lr: 0.000010
+[17:32:10.368] iteration 6075, epoch 24 : loss : 0.037962, lr: 0.000010
+[17:32:10.368] 278 test iterations per epoch
+[17:32:30.925] Testing performance in val model: mean_dice : 0.405512, best_dice : 0.800000
+[17:32:39.986] iteration 6100, epoch 25 : loss : 0.042473, lr: 0.000010
+[17:32:58.014] iteration 6150, epoch 25 : loss : 0.029439, lr: 0.000010
+[17:33:16.022] iteration 6200, epoch 25 : loss : 0.039458, lr: 0.000010
+[17:33:34.116] iteration 6250, epoch 25 : loss : 0.025424, lr: 0.000010
+[17:33:52.201] iteration 6300, epoch 25 : loss : 0.021018, lr: 0.000010
+[17:33:58.693] iteration 6318, epoch 25 : loss : 0.024320, lr: 0.000010
+[17:33:58.693] 278 test iterations per epoch
+[17:34:19.397] Testing performance in val model: mean_dice : 0.409627, best_dice : 0.800000
+[17:34:30.906] iteration 6350, epoch 26 : loss : 0.189952, lr: 0.000010
+[17:34:48.905] iteration 6400, epoch 26 : loss : 0.032828, lr: 0.000010
+[17:35:06.924] iteration 6450, epoch 26 : loss : 0.282034, lr: 0.000010
+[17:35:24.959] iteration 6500, epoch 26 : loss : 0.024215, lr: 0.000010
+[17:35:43.025] iteration 6550, epoch 26 : loss : 0.198438, lr: 0.000010
+[17:35:47.003] iteration 6561, epoch 26 : loss : 0.250932, lr: 0.000010
+[17:35:47.003] 278 test iterations per epoch
+[17:36:07.493] Testing performance in val model: mean_dice : 0.406629, best_dice : 0.800000
+[17:36:21.540] iteration 6600, epoch 27 : loss : 0.028836, lr: 0.000010
+[17:36:39.517] iteration 6650, epoch 27 : loss : 0.217428, lr: 0.000010
+[17:36:57.591] iteration 6700, epoch 27 : loss : 0.025495, lr: 0.000010
+[17:37:15.626] iteration 6750, epoch 27 : loss : 0.057590, lr: 0.000010
+[17:37:33.616] iteration 6800, epoch 27 : loss : 0.056406, lr: 0.000010
+[17:37:35.072] iteration 6804, epoch 27 : loss : 0.253617, lr: 0.000010
+[17:37:35.072] 278 test iterations per epoch
+[17:37:55.411] Testing performance in val model: mean_dice : 0.409424, best_dice : 0.800000
+[17:38:12.001] iteration 6850, epoch 28 : loss : 0.031233, lr: 0.000010
+[17:38:30.058] iteration 6900, epoch 28 : loss : 0.032602, lr: 0.000010
+[17:38:48.066] iteration 6950, epoch 28 : loss : 0.028819, lr: 0.000010
+[17:39:06.072] iteration 7000, epoch 28 : loss : 0.193363, lr: 0.000010
+[17:39:22.997] iteration 7047, epoch 28 : loss : 0.218355, lr: 0.000010
+[17:39:22.997] 278 test iterations per epoch
+[17:39:43.237] Testing performance in val model: mean_dice : 0.405517, best_dice : 0.800000
+[17:39:44.328] iteration 7050, epoch 29 : loss : 0.057316, lr: 0.000010
+[17:40:02.266] iteration 7100, epoch 29 : loss : 0.040686, lr: 0.000010
+[17:40:20.385] iteration 7150, epoch 29 : loss : 0.045504, lr: 0.000010
+[17:40:38.434] iteration 7200, epoch 29 : loss : 0.026858, lr: 0.000010
+[17:40:56.492] iteration 7250, epoch 29 : loss : 0.036400, lr: 0.000010
+[17:41:10.910] iteration 7290, epoch 29 : loss : 0.074160, lr: 0.000010
+[17:41:10.910] 278 test iterations per epoch
+[17:41:31.383] Testing performance in val model: mean_dice : 0.416718, best_dice : 0.800000
+[17:41:34.983] iteration 7300, epoch 30 : loss : 0.026398, lr: 0.000010
+[17:41:52.976] iteration 7350, epoch 30 : loss : 0.037841, lr: 0.000010
+[17:42:11.125] iteration 7400, epoch 30 : loss : 0.027216, lr: 0.000010
+[17:42:29.125] iteration 7450, epoch 30 : loss : 0.029104, lr: 0.000010
+[17:42:47.188] iteration 7500, epoch 30 : loss : 0.053398, lr: 0.000010
+[17:42:59.056] iteration 7533, epoch 30 : loss : 0.032279, lr: 0.000010
+[17:42:59.056] 278 test iterations per epoch
+[17:43:19.687] Testing performance in val model: mean_dice : 0.417972, best_dice : 0.800000
+[17:43:25.826] iteration 7550, epoch 31 : loss : 0.024624, lr: 0.000010
+[17:43:43.895] iteration 7600, epoch 31 : loss : 0.029092, lr: 0.000010
+[17:44:01.905] iteration 7650, epoch 31 : loss : 0.275737, lr: 0.000010
+[17:44:19.892] iteration 7700, epoch 31 : loss : 0.061015, lr: 0.000010
+[17:44:37.924] iteration 7750, epoch 31 : loss : 0.049176, lr: 0.000010
+[17:44:47.290] iteration 7776, epoch 31 : loss : 0.116664, lr: 0.000010
+[17:44:47.290] 278 test iterations per epoch
+[17:45:07.829] Testing performance in val model: mean_dice : 0.405647, best_dice : 0.800000
+[17:45:16.556] iteration 7800, epoch 32 : loss : 0.106622, lr: 0.000010
+[17:45:34.542] iteration 7850, epoch 32 : loss : 0.032168, lr: 0.000010
+[17:45:52.586] iteration 7900, epoch 32 : loss : 0.024046, lr: 0.000010
+[17:46:10.621] iteration 7950, epoch 32 : loss : 0.035547, lr: 0.000010
+[17:46:28.628] iteration 8000, epoch 32 : loss : 0.206594, lr: 0.000010
+[17:46:35.461] iteration 8019, epoch 32 : loss : 0.029377, lr: 0.000010
+[17:46:35.461] 278 test iterations per epoch
+[17:46:56.163] Testing performance in val model: mean_dice : 0.414479, best_dice : 0.800000
+[17:47:07.346] iteration 8050, epoch 33 : loss : 0.064718, lr: 0.000010
+[17:47:25.332] iteration 8100, epoch 33 : loss : 0.045090, lr: 0.000010
+[17:47:43.350] iteration 8150, epoch 33 : loss : 0.034888, lr: 0.000010
+[17:48:01.331] iteration 8200, epoch 33 : loss : 0.126763, lr: 0.000010
+[17:48:19.328] iteration 8250, epoch 33 : loss : 0.246611, lr: 0.000010
+[17:48:23.781] iteration 8262, epoch 33 : loss : 0.063339, lr: 0.000010
+[17:48:23.781] 278 test iterations per epoch
+[17:48:44.246] Testing performance in val model: mean_dice : 0.425631, best_dice : 0.800000
+[17:48:57.910] iteration 8300, epoch 34 : loss : 0.186784, lr: 0.000010
+[17:49:15.887] iteration 8350, epoch 34 : loss : 0.031326, lr: 0.000010
+[17:49:33.870] iteration 8400, epoch 34 : loss : 0.045726, lr: 0.000010
+[17:49:51.889] iteration 8450, epoch 34 : loss : 0.043362, lr: 0.000010
+[17:50:09.959] iteration 8500, epoch 34 : loss : 0.023959, lr: 0.000010
+[17:50:11.764] iteration 8505, epoch 34 : loss : 0.045141, lr: 0.000010
+[17:50:11.764] 278 test iterations per epoch
+[17:50:32.138] Testing performance in val model: mean_dice : 0.415420, best_dice : 0.800000
+[17:50:48.331] iteration 8550, epoch 35 : loss : 0.018880, lr: 0.000010
+[17:51:06.334] iteration 8600, epoch 35 : loss : 0.187515, lr: 0.000010
+[17:51:24.360] iteration 8650, epoch 35 : loss : 0.039059, lr: 0.000010
+[17:51:42.357] iteration 8700, epoch 35 : loss : 0.046163, lr: 0.000010
+[17:51:59.676] iteration 8748, epoch 35 : loss : 0.054868, lr: 0.000010
+[17:51:59.676] 278 test iterations per epoch
+[17:52:20.158] Testing performance in val model: mean_dice : 0.414317, best_dice : 0.800000
+[17:52:20.907] iteration 8750, epoch 36 : loss : 0.041704, lr: 0.000010
+[17:52:38.913] iteration 8800, epoch 36 : loss : 0.024488, lr: 0.000010
+[17:52:56.913] iteration 8850, epoch 36 : loss : 0.040445, lr: 0.000010
+[17:53:14.925] iteration 8900, epoch 36 : loss : 0.024215, lr: 0.000010
+[17:53:33.049] iteration 8950, epoch 36 : loss : 0.048858, lr: 0.000010
+[17:53:47.830] iteration 8991, epoch 36 : loss : 0.038287, lr: 0.000010
+[17:53:47.830] 278 test iterations per epoch
+[17:54:08.380] Testing performance in val model: mean_dice : 0.408660, best_dice : 0.800000
+[17:54:11.638] iteration 9000, epoch 37 : loss : 0.026244, lr: 0.000010
+[17:54:29.646] iteration 9050, epoch 37 : loss : 0.035104, lr: 0.000010
+[17:54:47.652] iteration 9100, epoch 37 : loss : 0.023368, lr: 0.000010
+[17:55:05.643] iteration 9150, epoch 37 : loss : 0.028828, lr: 0.000010
+[17:55:23.660] iteration 9200, epoch 37 : loss : 0.189043, lr: 0.000010
+[17:55:35.883] iteration 9234, epoch 37 : loss : 0.023644, lr: 0.000010
+[17:55:35.883] 278 test iterations per epoch
+[17:55:56.604] Testing performance in val model: mean_dice : 0.410117, best_dice : 0.800000
+[17:56:02.371] iteration 9250, epoch 38 : loss : 0.114785, lr: 0.000010
+[17:56:20.329] iteration 9300, epoch 38 : loss : 0.205683, lr: 0.000010
+[17:56:38.328] iteration 9350, epoch 38 : loss : 0.030651, lr: 0.000010
+[17:56:56.437] iteration 9400, epoch 38 : loss : 0.031442, lr: 0.000010
+[17:57:14.505] iteration 9450, epoch 38 : loss : 0.056839, lr: 0.000010
+[17:57:24.247] iteration 9477, epoch 38 : loss : 0.055346, lr: 0.000010
+[17:57:24.247] 278 test iterations per epoch
+[17:57:44.707] Testing performance in val model: mean_dice : 0.415549, best_dice : 0.800000
+[17:57:52.993] iteration 9500, epoch 39 : loss : 0.042859, lr: 0.000010
+[17:58:11.040] iteration 9550, epoch 39 : loss : 0.033354, lr: 0.000010
+[17:58:29.043] iteration 9600, epoch 39 : loss : 0.049094, lr: 0.000010
+[17:58:47.137] iteration 9650, epoch 39 : loss : 0.034682, lr: 0.000010
+[17:59:05.125] iteration 9700, epoch 39 : loss : 0.041266, lr: 0.000010
+[17:59:12.338] iteration 9720, epoch 39 : loss : 0.024755, lr: 0.000010
+[17:59:12.338] 278 test iterations per epoch
+[17:59:33.098] Testing performance in val model: mean_dice : 0.412470, best_dice : 0.800000
+[17:59:43.907] iteration 9750, epoch 40 : loss : 0.028617, lr: 0.000010
+[18:00:01.943] iteration 9800, epoch 40 : loss : 0.030681, lr: 0.000010
+[18:00:19.993] iteration 9850, epoch 40 : loss : 0.248799, lr: 0.000010
+[18:00:37.972] iteration 9900, epoch 40 : loss : 0.191862, lr: 0.000010
+[18:00:56.006] iteration 9950, epoch 40 : loss : 0.094679, lr: 0.000010
+[18:01:00.685] iteration 9963, epoch 40 : loss : 0.041028, lr: 0.000010
+[18:01:00.685] 278 test iterations per epoch
+[18:01:21.451] Testing performance in val model: mean_dice : 0.415197, best_dice : 0.800000
+[18:01:34.770] iteration 10000, epoch 41 : loss : 0.022500, lr: 0.000010
+[18:01:52.841] iteration 10050, epoch 41 : loss : 0.023632, lr: 0.000010
+[18:02:10.888] iteration 10100, epoch 41 : loss : 0.186004, lr: 0.000010
+[18:02:28.884] iteration 10150, epoch 41 : loss : 0.194205, lr: 0.000010
+[18:02:46.885] iteration 10200, epoch 41 : loss : 0.021885, lr: 0.000010
+[18:02:49.069] iteration 10206, epoch 41 : loss : 0.026058, lr: 0.000010
+[18:02:49.073] 278 test iterations per epoch
+[18:03:09.884] Testing performance in val model: mean_dice : 0.418663, best_dice : 0.800000
+[18:03:25.799] iteration 10250, epoch 42 : loss : 0.023247, lr: 0.000010
+[18:03:43.924] iteration 10300, epoch 42 : loss : 0.041758, lr: 0.000010
+[18:04:01.937] iteration 10350, epoch 42 : loss : 0.030576, lr: 0.000010
+[18:04:19.956] iteration 10400, epoch 42 : loss : 0.050702, lr: 0.000010
+[18:04:37.583] iteration 10449, epoch 42 : loss : 0.197562, lr: 0.000010
+[18:04:37.583] 278 test iterations per epoch
+[18:04:58.146] Testing performance in val model: mean_dice : 0.421579, best_dice : 0.800000
+[18:04:58.525] iteration 10450, epoch 43 : loss : 0.025171, lr: 0.000010
+[18:05:16.525] iteration 10500, epoch 43 : loss : 0.031007, lr: 0.000010
+[18:05:34.721] iteration 10550, epoch 43 : loss : 0.053490, lr: 0.000010
+[18:05:52.751] iteration 10600, epoch 43 : loss : 0.043766, lr: 0.000010
+[18:06:10.830] iteration 10650, epoch 43 : loss : 0.074376, lr: 0.000010
+[18:06:26.286] iteration 10692, epoch 43 : loss : 0.078353, lr: 0.000010
+[18:06:26.286] 278 test iterations per epoch
+[18:06:47.780] Testing performance in val model: mean_dice : 0.412034, best_dice : 0.800000
+[18:06:50.678] iteration 10700, epoch 44 : loss : 0.032939, lr: 0.000010
+[18:07:08.871] iteration 10750, epoch 44 : loss : 0.035026, lr: 0.000010
+[18:07:27.075] iteration 10800, epoch 44 : loss : 0.037339, lr: 0.000010
+[18:07:45.093] iteration 10850, epoch 44 : loss : 0.059624, lr: 0.000010
+[18:08:03.111] iteration 10900, epoch 44 : loss : 0.037222, lr: 0.000010
+[18:08:15.781] iteration 10935, epoch 44 : loss : 0.046949, lr: 0.000010
+[18:08:15.782] 278 test iterations per epoch
+[18:08:36.584] Testing performance in val model: mean_dice : 0.413960, best_dice : 0.800000
+[18:08:42.058] iteration 10950, epoch 45 : loss : 0.042811, lr: 0.000010
+[18:09:00.356] iteration 11000, epoch 45 : loss : 0.125023, lr: 0.000010
+[18:09:18.421] iteration 11050, epoch 45 : loss : 0.027441, lr: 0.000010
+[18:09:36.668] iteration 11100, epoch 45 : loss : 0.033295, lr: 0.000010
+[18:09:54.745] iteration 11150, epoch 45 : loss : 0.027342, lr: 0.000010
+[18:10:04.858] iteration 11178, epoch 45 : loss : 0.029290, lr: 0.000010
+[18:10:04.858] 278 test iterations per epoch
+[18:10:25.418] Testing performance in val model: mean_dice : 0.409435, best_dice : 0.800000
+[18:10:33.450] iteration 11200, epoch 46 : loss : 0.125769, lr: 0.000010
+[18:10:51.507] iteration 11250, epoch 46 : loss : 0.135353, lr: 0.000010
+[18:11:09.513] iteration 11300, epoch 46 : loss : 0.038834, lr: 0.000010
+[18:11:27.538] iteration 11350, epoch 46 : loss : 0.021998, lr: 0.000010
+[18:11:45.581] iteration 11400, epoch 46 : loss : 0.030449, lr: 0.000010
+[18:11:53.168] iteration 11421, epoch 46 : loss : 0.023693, lr: 0.000010
+[18:11:53.168] 278 test iterations per epoch
+[18:12:13.548] Testing performance in val model: mean_dice : 0.414952, best_dice : 0.800000
+[18:12:23.986] iteration 11450, epoch 47 : loss : 0.041890, lr: 0.000010
+[18:12:42.049] iteration 11500, epoch 47 : loss : 0.027299, lr: 0.000010
+[18:13:00.077] iteration 11550, epoch 47 : loss : 0.151449, lr: 0.000010
+[18:13:18.056] iteration 11600, epoch 47 : loss : 0.028131, lr: 0.000010
+[18:13:36.172] iteration 11650, epoch 47 : loss : 0.023872, lr: 0.000010
+[18:13:41.264] iteration 11664, epoch 47 : loss : 0.134943, lr: 0.000010
+[18:13:41.264] 278 test iterations per epoch
+[18:14:01.755] Testing performance in val model: mean_dice : 0.423807, best_dice : 0.800000
+[18:14:14.727] iteration 11700, epoch 48 : loss : 0.052655, lr: 0.000010
+[18:14:32.733] iteration 11750, epoch 48 : loss : 0.031087, lr: 0.000010
+[18:14:50.726] iteration 11800, epoch 48 : loss : 0.055092, lr: 0.000010
+[18:15:08.712] iteration 11850, epoch 48 : loss : 0.023951, lr: 0.000010
+[18:15:26.861] iteration 11900, epoch 48 : loss : 0.024871, lr: 0.000010
+[18:15:29.413] iteration 11907, epoch 48 : loss : 0.102855, lr: 0.000010
+[18:15:29.413] 278 test iterations per epoch
+[18:15:50.076] Testing performance in val model: mean_dice : 0.418183, best_dice : 0.800000
+[18:16:05.613] iteration 11950, epoch 49 : loss : 0.072974, lr: 0.000010
+[18:16:23.624] iteration 12000, epoch 49 : loss : 0.017447, lr: 0.000010
+[18:16:41.614] iteration 12050, epoch 49 : loss : 0.064749, lr: 0.000010
+[18:16:59.618] iteration 12100, epoch 49 : loss : 0.031106, lr: 0.000010
+[18:17:17.627] iteration 12150, epoch 49 : loss : 0.061245, lr: 0.000010
+[18:17:17.627] iteration 12150, epoch 49 : loss : 0.061245, lr: 0.000010
+[18:17:17.639] 278 test iterations per epoch
+[18:17:38.470] Testing performance in val model: mean_dice : 0.417222, best_dice : 0.800000
+[18:17:39.847] save model to C:/Users/jaydu/OneDrive/Desktop/python_projects/polpy classification/PraNet-V2/models/Synapse/run_2025-10-13_19_Dual_MIST_CAM_loss_MUTATION_w3_7_256_pretrain_epo50_bs4_lr1e-05_256_s2222\epoch_49.pth
