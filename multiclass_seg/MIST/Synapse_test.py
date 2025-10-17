@@ -81,7 +81,7 @@ else:
     classes = ['spleen', 'right kidney', 'left kidney', 'gallbladder', 'pancreas', 'liver', 'stomach', 'aorta']
 
 def inference(args, model, test_save_path=None):
-    db_test = args.Dataset(base_dir=args.volume_path, split="val_vol", list_dir=args.list_dir, nclass=args.num_classes)
+    db_test = args.Dataset(base_dir=args.volume_path, split="valid", list_dir=args.list_dir, nclass=args.num_classes)
     testloader = DataLoader(db_test, batch_size=1, shuffle=False, num_workers=1)
     logging.info("{} test iterations per epoch".format(len(testloader)))
     model.eval()

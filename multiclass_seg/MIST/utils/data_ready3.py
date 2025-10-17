@@ -134,8 +134,8 @@ val_imgs, test_imgs = train_test_split(val_test, test_size=test_split / (val_spl
 
 splits = {
     "train": train_imgs,
-    "val_vol": val_imgs,
-    "test_vol": test_imgs
+    "valid": val_imgs,
+    "test": test_imgs
 }
 
 # ---- 3. Process and save each split ----

@@ -34,7 +34,7 @@ def convert_labels_to_one_hot_masks(batch_labels, num_classes):
 
             
 def inference(args, model, best_performance):
-    db_test = Synapse_dataset(base_dir=args.volume_path, split="val_vol", list_dir=args.list_dir, nclass=args.num_classes)
+    db_test = Synapse_dataset(base_dir=args.volume_path, split="valid", list_dir=args.list_dir, nclass=args.num_classes)
     
     testloader = DataLoader(db_test, batch_size=1, shuffle=False, num_workers=1)
     logging.info("{} test iterations per epoch".format(len(testloader)))
