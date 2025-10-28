@@ -72,9 +72,9 @@ def softmax(x, axis=1):
 
 def main():
     print("--- Live Multi-Class Polyp Detection (V3 with Tracking) ---")
-    if not ONNX_MODEL_PATH.exists():
-        print(f"\n[ERROR] ONNX model not found at: {ONNX_MODEL_PATH}")
-        return
+    # if not ONNX_MODEL_PATH.exists():
+    #     print(f"\n[ERROR] ONNX model not found at: {ONNX_MODEL_PATH}")
+    #     return
 
     print(f"Loading ONNX model from: {ONNX_MODEL_PATH}")
     providers = ['CUDAExecutionProvider', 'CPUExecutionProvider']
