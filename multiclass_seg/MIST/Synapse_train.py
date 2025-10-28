@@ -24,13 +24,24 @@ from trainer import trainer_synapse
 from ptflops import get_model_complexity_info
 
 
-# In[2]:
-from dotenv import load_dotenv  # Import the dotenv library
+# # In[2]:
+# from dotenv import load_dotenv  # Import the dotenv library
 
-load_dotenv()
-output_dir=os.getenv('dataset_npz_path')
-list_dir=os.getenv('dataset_synapse_path')
+# load_dotenv()
+# output_dir=os.getenv('dataset_npz_path')
+# list_dir=os.getenv('dataset_synapse_path')
+# Get absolute path of this script
+current_file = os.path.abspath(__file__)
 
+# Go up three levels: MIST → multiclass_seg → PraNet-V2 (root)
+project_root = os.path.dirname(os.path.dirname(os.path.dirname(current_file)))
+
+# Define dataset folder
+dataset_root = os.path.join(project_root, "Dataset", "Dataset_2_0")
+
+# Define paths
+output_dir = os.path.join(dataset_root, "train_npz_new")
+list_dir = os.path.join(dataset_root, "list_Synapse")
 import gc
 gc.collect()
 torch.cuda.empty_cache()
@@ -59,7 +70,7 @@ parser.add_argument('--num_classes', type=int,
 parser.add_argument('--max_iterations', type=int,
                     default=30000, help='maximum epoch number to train')
 parser.add_argument('--max_epochs', type=int,
-                    default=50, help='maximum epoch number to train')
+                    default=5, help='maximum epoch number to train')
 parser.add_argument('--batch_size', type=int,
                     default=4, help='batch_size per gpu')
 parser.add_argument('--n_gpu', type=int, default=1, help='total gpu')
@@ -147,7 +158,4 @@ if __name__ == "__main__":
 
 
 # In[ ]:
-
-
-
 

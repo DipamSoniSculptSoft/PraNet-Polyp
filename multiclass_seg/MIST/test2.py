@@ -51,26 +51,45 @@ import cv2
 import numpy as np
 import onnxruntime
 import time
+from pathlib import Path
+from dotenv import load_dotenv
 
+# Load .env file (if present) to read custom paths for dataset/models/etc.
+# This allows the same code to run locally and on servers without modification.
+load_dotenv()
 # =====================================================================================
 # CONFIGURATION - EDIT THIS SECTION
 # =====================================================================================
 
-# --- (USER ACTION REQUIRED) ---
-# 1. Path to your exported RGB ONNX model folder.
-#    This MUST be updated to point to the directory on your local machine.
-PYTORCH_MODEL_FOLDER = r"C:\Users\jaydu\OneDrive\Desktop\python_projects\polpy classification\PraNet-V2\models\Synapse\run_2025-10-14_18_Dual_MIST_CAM_loss_MUTATION_w3_7_256_pretrain_epo50_bs4_lr1e-05_256_s2222"
-ONNX_MODEL_PATH = os.path.join(PYTORCH_MODEL_FOLDER, "mist_cam_polyp_rgb.onnx")
+# --- (CODE UPDATED) ---
+# The following section has been corrected to dynamically find your model file.
+
+# 1. Define the Project Root.
+#    Since this script is in PraNet-V2/multiclass_seg/MIST, we need to go
+#    up two parent directories to get to the main "PraNet-V2" folder.
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+# 2. Define the Model Directory.
+#    The default path is now set to the specific model folder from your screenshot.
+#    os.getenv will still allow you to override this with a .env file if needed.
+MODEL_DIR = os.getenv(
+    "MODEL_DIR",
+    r"models/Synapse/run_2025-10-14_18_Dual_MIST_CAM_loss_MUTATION_w3_7_256_pretrain_epo50_bs4_lr1e-05_256_s2222"
+)
+
+# 3. Construct the full path to the ONNX model.
+PYTORCH_MODEL_FOLDER = PROJECT_ROOT / MODEL_DIR
+ONNX_MODEL_PATH = PYTORCH_MODEL_FOLDER / "mist_cam_polyp_rgb.onnx"
 
 # --- (USER ACTION REQUIRED) ---
-# 2. Video Source
+# 4. Video Source
 #    Change this to your video file path or a camera index (e.g., 0 for webcam).
-VIDEO_SOURCE = r"C:\Users\jaydu\OneDrive\Desktop\python_projects\live-2\6.20.25.0845.mp4"
+VIDEO_SOURCE = 2 #r"C:\Users\jaydu\OneDrive\Desktop\python_projects\live-2\6.20.25.0845.mp4"
 
-# 3. Model Input Size (must match the trained model)
+# 5. Model Input Size (must match the trained model)
 IMG_SIZE = 256
 
-# 4. Visualization & Threshold Settings
+# 6. Visualization & Threshold Settings
 CLASS_COLORS = {
     1: (0, 255, 255),  # Class 1 (Adenoma) -> Yellow (BGR format)
     2: (255, 0, 255),  # Class 2 (Hyperplastic) -> Magenta (BGR format)
@@ -119,12 +138,12 @@ def main():
 
     if not os.path.exists(ONNX_MODEL_PATH):
         print(f"\n[ERROR] ONNX model not found at: {ONNX_MODEL_PATH}")
-        print("Please update the 'PYTORCH_MODEL_FOLDER' variable in the configuration section.")
+        print("Please check the 'MODEL_DIR' variable in the configuration section.")
         return
 
     print(f"Loading ONNX model from: {ONNX_MODEL_PATH}")
     providers = ['CUDAExecutionProvider', 'CPUExecutionProvider']
-    session = onnxruntime.InferenceSession(ONNX_MODEL_PATH, providers=providers)
+    session = onnxruntime.InferenceSession(str(ONNX_MODEL_PATH), providers=providers) # Use str() for pathlib compatibility
     print(f"ONNX session created using: {session.get_providers()[0]}")
 
     input_name = session.get_inputs()[0].name
@@ -150,13 +169,13 @@ def main():
         # 1. Preprocess the frame
         prest = time.time()
         input_tensor = preprocess_rgb_optimized(frame, IMG_SIZE)
-        print(f"Preprocessing time: {(time.time() - prest) * 1000:.1f} ms")
+        # print(f"Preprocessing time: {(time.time() - prest) * 1000:.1f} ms")
 
-        
+
         # 2. Run inference
         sessst = time.time()
         raw_output = session.run([output_name], {input_name: input_tensor})[0]
-        print(f"Session (Inference) time: {(time.time() - sessst) * 1000:.1f} ms")
+        # print(f"Session (Inference) time: {(time.time() - sessst) * 1000:.1f} ms")
 
         # =====================================================================================
         # POST-PROCESSING (FULLY OPTIMIZED V2)
@@ -182,7 +201,12 @@ def main():
             class_mask = (pred_mask == class_id).astype(np.uint8)
 
             # 5. Calculate the mean confidence across all pixels of the detected mask
-            mean_confidence = np.mean(confidence_map[class_mask == 1])
+            # Check for empty mask to avoid division by zero if no pixels are detected
+            if np.any(class_mask):
+                mean_confidence = np.mean(confidence_map[class_mask == 1])
+            else:
+                mean_confidence = 0
+
 
             # 6. THRESHOLDING FIRST: This is a key optimization. Only proceed if confidence is high.
             if mean_confidence >= CONFIDENCE_THRESHOLD:
@@ -215,19 +239,19 @@ def main():
                     cv2.rectangle(frame, (orig_x, orig_y), (orig_x + orig_w, orig_y + orig_h), color, BOX_THICKNESS)
                     cv2.putText(frame, display_text, (orig_x, orig_y - 10), cv2.FONT_HERSHEY_SIMPLEX, FONT_SCALE, color, BOX_THICKNESS)
 
-        print(f"Post-processing time: {(time.time() - posst) * 1000:.1f} ms") # Uncomment for detailed timing
+        # print(f"Post-processing time: {(time.time() - posst) * 1000:.1f} ms") # Uncomment for detailed timing
 
         # Display latency information
         if SHOW_LATENCY:
             overall_latency = (time.time() - overall_start_time) * 1000
             latency_text = f"Latency: {overall_latency:.1f} ms"
             (w, h), _ = cv2.getTextSize(latency_text, cv2.FONT_HERSHEY_SIMPLEX, FONT_SCALE, BOX_THICKNESS)
-            print(f"--- Total Latency for frame: {overall_latency:.1f} ms ---")
+            # print(f"--- Total Latency for frame: {overall_latency:.1f} ms ---")
             cv2.rectangle(frame, (original_width - w - 20, 10), (original_width - 10, 10 + h + 10), (0,0,0), -1)
             cv2.putText(frame, latency_text, (original_width - w - 15, 10 + h), cv2.FONT_HERSHEY_SIMPLEX, FONT_SCALE, (0, 255, 0), BOX_THICKNESS)
 
         # Resize frame for better display
-        display_width = 960
+        display_width = 640
         display_height = int((display_width / frame.shape[1]) * frame.shape[0])
         display_frame = cv2.resize(frame, (display_width, display_height), interpolation=cv2.INTER_AREA)
 

@@ -102,7 +102,7 @@ def export_model_to_onnx():
     # This check contains a hardcoded path specific to the original developer's machine.
     # It is recommended to either REMOVE this check or update the path if you wish
     # to use a similar check for your own environment.
-    if not os.path.exists(PYTORCH_MODEL_PATH) or r"C:\Users\jaydu\OneDrive\Desktop\python_projects\polpy classification\PraNet-V2\multiclass_seg\MIST\onnx_model" in PYTORCH_MODEL_PATH:
+    if not os.path.exists(PYTORCH_MODEL_PATH) or ONNX_MODEL_PATH in PYTORCH_MODEL_PATH:
         print(f"\n[ERROR] PyTorch model not found. Please update the 'PYTORCH_MODEL_PATH' variable in the script.")
         return
 
