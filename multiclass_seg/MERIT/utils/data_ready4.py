@@ -20,7 +20,7 @@
 #        --output_dir "/path/to/save/npz" \
 #        --img_size 384
 # =====================================================================================
-
+import os 
 import cv2
 import numpy as np
 import argparse
@@ -77,13 +77,18 @@ def main():
 
     # Define project root to provide sensible defaults for paths
     project_root = Path(__file__).resolve().parents[3] # Assumes script is 3 levels deep
-    dataset_root = project_root / "Dataset" / "Dataset_2_0"
+    # project_root = Path(__file__).resolve() # Assumes script is 3 levels deep
+    # dataset_root = project_root / "Dataset" / "/"
+    dataset_root = project_root / "classification_dataset" 
+    prepared_data = project_root / "dataset"
+
+    os.makedirs(prepared_data, exist_ok=True)
 
     parser.add_argument('--image_dir', type=str, default=str(dataset_root / "images"), help="Directory containing images with masks.")
     parser.add_argument('--mask_dir', type=str, default=str(dataset_root / "masks"), help="Directory containing corresponding color masks.")
     parser.add_argument('--negative_dir', type=str, default=str(dataset_root / "negative_samples"), help="Directory for images with no masks.")
-    parser.add_argument('--output_dir', type=str, default=str(dataset_root / "train_npz_new"), help="Directory to save the processed .npz files.")
-    parser.add_argument('--list_dir', type=str, default=str(dataset_root / "list_Synapse"), help="Directory to save the train/valid/test list files.")
+    parser.add_argument('--output_dir', type=str, default=str(prepared_data / "train_npz_new"), help="Directory to save the processed .npz files.")
+    parser.add_argument('--list_dir', type=str, default=str(prepared_data / "list_Synapse"), help="Directory to save the train/valid/test list files.")
     parser.add_argument('--img_size', type=int, default=256, help="The edge size to which images and masks will be resized (e.g., 256 -> 256x256).")
     parser.add_argument('--val_split', type=float, default=0.2, help="Fraction of the data to be used for validation.")
     parser.add_argument('--test_split', type=float, default=0.1, help="Fraction of the data to be used for testing.")
@@ -107,8 +112,11 @@ def main():
     logger.info(f"   Image Size           : {img_size_tuple}")
 
     # Create output directories if they don't exist
-    output_dir.mkdir(parents=True, exist_ok=True)
-    list_dir.mkdir(parents=True, exist_ok=True)
+    # output_dir.mkdir(parents=True, exist_ok=True)
+    # list_dir.mkdir(parents=True, exist_ok=True)
+    output_dir.mkdir( exist_ok=True)
+    list_dir.mkdir(exist_ok=True)
+
 
     # ---- 1. Collect all image files ----
     all_image_paths: List[Path] = []

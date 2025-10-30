@@ -396,7 +396,7 @@ import random
 import time
 from datetime import datetime
 import pytz
-
+from pathlib import Path
 
 import numpy as np
 from tqdm import tqdm
@@ -413,10 +413,13 @@ parser = argparse.ArgumentParser()
 
 # --- MODIFICATION START ---
 # Path arguments are now required.
-parser.add_argument("--root_dir", type=str, required=True, help="Root directory of the preprocessed dataset (e.g., .npz files)")
-parser.add_argument("--volume_path", type=str, required=True, help="Root directory for validation volume data (can be same as root_dir)")
-parser.add_argument("--list_dir", type=str, required=True, help="Directory containing the train/val/test split lists (e.g., train.txt)")
-parser.add_argument("--save_path", type=str, required=True, help="Base directory where trained model folders will be saved")
+
+project_root = Path(__file__).resolve().parents[2]
+dataset_path = project_root / "dataset"
+parser.add_argument("--root_dir", type=str, default=str(dataset_path / 'train_npz_new'), help="Root directory of the preprocessed dataset (e.g., .npz files)")
+parser.add_argument("--volume_path", type=str, default = str(dataset_path / 'train_npz_new'), help="Root directory for validation volume data (can be same as root_dir)")
+parser.add_argument("--list_dir", type=str, default = str(dataset_path / 'list_Synapse'), help="Directory containing the train/val/test split lists (e.g., train.txt)")
+parser.add_argument("--save_path", type=str, default = str(project_root / 'output'),  help="Base directory where trained model folders will be saved")
 
 # Numerical arguments with correct types
 parser.add_argument("--batch_size", default=4, type=int, help="batch size")

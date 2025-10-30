@@ -2,3 +2,23 @@
 [15:12:26.252] ########## Using Single Supervision##########
 [15:16:54.978] iteration 50 : loss : 5.676814 lr_: 0.000100
 [15:21:17.863] iteration 100 : loss : 6.041431 lr_: 0.000100
+[15:25:50.637] iteration 150 : loss : 8.362819 lr_: 0.000100
+[15:29:54.729] iteration 200 : loss : 3.879413 lr_: 0.000100
+[15:34:16.594] iteration 250 : loss : 5.731600 lr_: 0.000100
+[15:40:38.061] iteration 300 : loss : 5.969584 lr_: 0.000100
+[15:47:27.251] iteration 350 : loss : 3.082650 lr_: 0.000100
+[15:52:46.323] iteration 390 : loss : 5.296069 lr_: 0.000100
+[15:52:47.946] Validation ===>
+[15:56:06.516] Testing performance in val model: mean_dice : 0.537328, best_dice : 0.870000
+[15:57:21.775] iteration 400 : loss : 6.037791 lr_: 0.000100
+[16:04:19.102] iteration 450 : loss : 2.836204 lr_: 0.000100
+[16:11:24.160] iteration 500 : loss : 5.189742 lr_: 0.000100
+[16:16:34.065] iteration 550 : loss : 7.959207 lr_: 0.000100
+[16:20:56.669] iteration 600 : loss : 3.568936 lr_: 0.000100
+[16:25:22.077] iteration 650 : loss : 4.752434 lr_: 0.000100
+[16:29:51.640] iteration 700 : loss : 2.769484 lr_: 0.000100
+[16:34:01.602] iteration 750 : loss : 7.710418 lr_: 0.000100
+[16:36:29.946] iteration 780 : loss : 5.128029 lr_: 0.000100
+[16:36:30.639] Validation ===>
+[16:38:21.658] Testing performance in val model: mean_dice : 0.683250, best_dice : 0.870000
+[16:38:22.338] save model to C:\Users\jaydu\OneDrive\Desktop\python_projects\git_live\PraNet-V2-main\multiclass_seg\MERIT\model_pth\ACDC/run_2025-10-30_17-42_MERIT_Cascaded_Small_loss_MUTATION_w3_7_256_pretrain_epo2_bs4_lr0.0001_256_s2222\epoch=1_lr=0.0001_avg_dcs=0.6832500141598692.pth
