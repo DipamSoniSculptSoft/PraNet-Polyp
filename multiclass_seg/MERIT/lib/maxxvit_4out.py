@@ -274,7 +274,10 @@ class MaxxVitCfg:
     stem_bias: bool = True
     # conv_cfg: MaxxVitConvCfg = MaxxVitConvCfg()
     conv_cfg: MaxxVitConvCfg = field(default_factory=MaxxVitConvCfg)
-    transformer_cfg: MaxxVitTransformerCfg = MaxxVitTransformerCfg()
+    # transformer_cfg: MaxxVitTransformerCfg = MaxxVitTransformerCfg()
+    transformer_cfg: MaxxVitTransformerCfg = field(
+        default_factory=MaxxVitTransformerCfg
+    )
     weight_init: str = "vit_eff"
 
 
