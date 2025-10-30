@@ -56,7 +56,7 @@ PYTORCH_MODEL_PATH=r"C:\Users\jaydu\OneDrive\Desktop\python_projects\polpy class
 # 3. ONNX_MODEL_PATH: This is the destination path for the output ONNX model.
 #    By default, it saves the ONNX file in the same directory as the PyTorch model.
 #    You can change this to any location you prefer.
-ONNX_MODEL_PATH = os.path.join(os.path.dirname(PYTORCH_MODEL_PATH), "mist_cam_polyp_rgb.onnx")
+ONNX_MODEL_PATH = os.path.join(os.path.dirname(PYTORCH_MODEL_PATH), "merit_polyp_rgb.onnx")
 
 # 4. Model-specific parameters: These values must match the parameters used
 #    during the training of your model.
