@@ -1,2 +1,4 @@
 [15:12:26.252] \u3010Using Model:MERIT_Cascaded\u3011
 [15:12:26.252] ########## Using Single Supervision##########
+[15:16:54.978] iteration 50 : loss : 5.676814 lr_: 0.000100
+[15:21:17.863] iteration 100 : loss : 6.041431 lr_: 0.000100
