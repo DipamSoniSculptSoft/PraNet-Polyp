@@ -41,6 +41,8 @@ parser.add_argument('--pytorch_model_path', type=str, required=True,
 
 parser.add_argument('--onnx_model_path', type=str, required=True,
                     help='Destination path for the output .onnx model file.')
+parser.add_argument('--dual',action='store_true', help='dual supervision or single supervision')
+
 
 args = parser.parse_args()
 
